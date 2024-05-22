@@ -7,12 +7,18 @@ import android.view.View
 import android.widget.Button
 import android.widget.Switch
 import android.widget.TextView
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 
 class MainActivity : AppCompatActivity() {
     var percentual:Double = 0.7
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         if (savedInstanceState != null) {
             percentual=savedInstanceState.getDouble("percentual")
         }
@@ -34,10 +40,6 @@ class MainActivity : AppCompatActivity() {
             gasOuAlc(percentual)
             Log.d("PDM24","No btCalcular, $percentual")
         })
-
-
-
-
     }
 
     fun gasOuAlc(percentual: Double){
