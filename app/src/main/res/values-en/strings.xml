@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">With what fuel?</string>
+    <string name="title">Gas or Alcohol?</string>
+    <string name="alcoholPrice">Alcohol price</string>
+    <string name="gasPrice">Gas price</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="alcohol">Alcohol</string>
+    <string name="gas">Gas</string>
+
+</resources>

@@ -52,8 +52,8 @@ class MainActivity : AppCompatActivity() {
 
             val result: TextView = findViewById(R.id.result)
             result.text = when {
-                alcPrecoDouble <= percentual * gasPrecoDouble -> "Álcool"
-                else -> "Gasolina"
+                alcPrecoDouble <= percentual * gasPrecoDouble -> resources.getString(R.string.alcohol)
+                else -> resources.getString(R.string.gas)
             }
         }
     }

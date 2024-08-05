@@ -38,12 +38,12 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
-            android:text="Gasolina ou Álcool?"
+            android:text="@string/gasPrice"
             android:textAlignment="center"
             android:textColor="?attr/android:textColorPrimary"
             android:textSize="25sp"
             android:textStyle="bold"
-            tools:text="Gasolina ou Álcool?" />
+            tools:text="@string/title" />
 
         <EditText
             android:id="@+id/edAlcool"
@@ -52,7 +52,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:ems="10"
-            android:hint="Preço do alcool"
+            android:hint="@string/alcoholPrice"
             android:inputType="numberDecimal"
             android:paddingVertical="10sp"
             android:textSize="20sp" />
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:hint="Preço da gasolina"
+            android:hint="@string/gasPrice"
             android:inputType="numberDecimal"
             android:paddingVertical="10sp"
             android:textSize="20sp" />
@@ -99,7 +99,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="40dp"
-            android:text="Calcular"
+            android:text="@string/calculate"
             android:textColor="?attr/android:textColorHint" />
 
 
