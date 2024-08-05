@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_layout"
+        android:backgroundTint="?attr/colorSecondary"
+        android:orientation="vertical"
+        android:paddingHorizontal="30sp"
+        android:paddingVertical="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="150sp"
+            android:adjustViewBounds="true"
+            android:contentDescription="uma bomba de gasolina ilustrando o app"
+            android:paddingVertical="10dp"
+            android:scaleType="fitXY"
+            android:textAlignment="center"
+            app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:text="@string/gasPrice"
+            android:textAlignment="center"
+            android:textColor="?attr/android:textColorPrimary"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            tools:text="@string/title" />
+
+        <EditText
+            android:id="@+id/edAlcool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/alcoholPrice"
+            android:inputType="numberDecimal"
+            android:paddingVertical="10sp"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/edGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:hint="@string/gasPrice"
+            android:inputType="numberDecimal"
+            android:paddingVertical="10sp"
+            android:textSize="34sp" />
+
+        <Switch
+            android:id="@+id/swPercentual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:paddingVertical="10sp"
+            android:text="75%"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:theme="@style/SCBSwitch"
+            tools:checked="false" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="@string/calculate"
+            android:textColor="?attr/android:textColorHint"
+            android:textSize="34sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
